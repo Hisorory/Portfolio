@@ -488,3 +488,15 @@ footer{
     .blondie{
       height: 400px;
     }
+
+.music{
+  width: 100%;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 80px;
+}
+
+.Overview p{
+  text-align: center;
+  margin-top: 10px;
+}
