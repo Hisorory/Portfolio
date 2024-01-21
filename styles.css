@@ -15,7 +15,7 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1vh;
+    margin-top: 0;
 }
 
 .nav-links{
@@ -51,23 +51,42 @@ nav{
 body{
     background-color: rgb(27, 27, 27);
     font-family: 'Poppins', sans-serif;
-    height: 100%;
-}
+    height: 90%;
+    width: 100%;
 
-.container{
-    max-width: 1152px;
-    padding: 0 20px;
-    margin: 0 auto;
 }
 
 .content {
-  display: inline-block;
+  float:left; 
   width: 50%;
-  
+  margin-left: 10px;
 }
 
-.me {
-  width: auto;
+.AboutMe{
+  margin-left: -5%;
+  height: -20%;
+}
+.content2 {
+  float:left; 
+  width: 40%;
+}
+
+.Image{
+  margin-left: -2%;
+  margin-top: -19rem;
+  width: 30%;
+  height: auto;
+}
+
+.Image2{
+  margin-left: 20%;
+  margin-top: -13rem;
+  width: 30%;
+  height: auto;
+}
+
+.text{
+  margin-left: 0%; 
 }
 
 .hero{
@@ -77,31 +96,34 @@ body{
   margin-bottom: 35vh;   
 }
 
-.hero .left img{
-  width: 400px;
-}
-
 .hero .right {
   color: var(--white);
   margin-top: -7rem;
 }
+.hero .right2 {
+  color: var(--white);
+  margin-top: -7rem;
+  margin-left: -2%;
+}
 
-.hero .right h6{
+.hero .right h6, .right2 h6{
   font-size: 1.6rem;
   color: var(--primary);
   margin-bottom: 0.5rem;
 }
 
-.hero .right h1{
+.hero .right h1, .right2 h1{
     font-size: 4rem;
     font-weight: 100;
     line-height: 1.2;
     margin-bottom: 2rem;
     }
-    .hero .right h1 span{
+    .hero .right h1 span, .right h1 span{
     color: var(--primary);
     }
-    .hero .right p{
+
+
+    .hero .right p, .right2 p{
     line-height: 1.9;
     margin-bottom: 2rem;
     }
@@ -141,17 +163,17 @@ body{
       section.about .socials a:hover{
       background: var(--primary);
       }
-      section.services{
+      section.Skills{
         background: rgb(17, 17, 17)
         }
-        .services-head{
+        .Skills-head{
         color: rgb(153, 153, 153);
         text-align: center;
-        margin-bottom: 1rem;
-        line-height: 0.5rem;
+        margin-bottom: 0.5rem;
+        line-height: 4rem;
         color: var(--primary);
         }
-        .services-head + p{
+        .Skills-head + p{
         color: var(--white);
         font-family: 'Lato', sans-serif;
         margin-bottom: 1rem;
@@ -159,51 +181,51 @@ body{
         margin-bottom: 6rem;
         font-weight: 400;
         }
-        .card img{
-        width: 50px;
-        background:white;
-        }
-        section.services .card-grid{
+        
+        section.Skills .card-grid{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         column-gap: 2rem;
         }
-        section.services .card-grid .card{
-        background: var(--white);
+
+        section.Skills .card-grid .card{
+        background: white;
         padding: 3rem 2rem;
         position: relative;
         text-align: center;
         transition: all .2s ease;
         }
-        section.services .card-grid .card img{
-        position: absolute;
-        top: -1.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        color: var();
-        }
-        section.services .card-grid .card h2{
+        
+        .card-grid .card h1{
+          color: black;
         font-weight: 600;
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
         }
-        section.services .card-grid .card p{
+
+        section.Skills .card-grid .card h2{
+          color: black;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        }
+        section.Skills .card-grid .card p{
         font-family: 'Lato', sans-serif;
-        color: var(--seconday);
+        color: black;
         line-height: 1.6;
         }
-        section.services .card-grid .card:hover{
+        section.Skills .card-grid .card:hover{
         background: var(--primary);
         }
-        section.services .card-grid .card:hover h2{
+        section.Skills .card-grid .card:hover h2{
         color: var(--white);
         }
-        section.services .card-grid .card:hover p{
+        section.Skills .card-grid .card:hover p{
         color: var(--white);
         }
         @import 'utilities.css';
         :root{
-        --primary: rgb(142, 198, 231);
+        --primary: rgb(142, 181, 231);
         --bgDark: rgb(177, 177, 177);
         --white: rgb(250, 250, 250);
         --secondary: rgb(4, 0, 59)
@@ -237,7 +259,7 @@ body{
             .btn-primary{
             background-color: var(--primary);
             color: var(--secondary);
-            margin-top: -15rem;
+            margin-top: -23rem;
             }
             .btn-primary:hover{
             background: transparent;
@@ -285,3 +307,184 @@ img {
   margin-top: 50px;
   margin-left: 50px
 }
+
+.me {
+  margin-top: 20%;
+}
+
+
+footer{
+  height: max-content;
+  background: rgb(19, 19, 19);
+  text-align: center;
+  padding:4rem;
+  font-size: smaller;
+  display: flex;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  border-width: 50%;
+  display: flex;
+  overflow: hidden;
+	top: 42%;
+  margin-left: -10.2%;
+  width: 50%;
+  color: var(--primary);
+  font-size: 1.5em;
+
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+.info{
+  max-width: 800px;
+}
+
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: relative;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 4rem;
+  font-weight: 10;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.text-box p{
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+.Contact{
+  align-items: center;
+}
+
+.hero .right3 {
+  color: var(--white);
+  margin-top: -7rem;
+}
+
+.hero .right3 h6{
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.hero .right3 h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    }
+    .hero .right3 h1 span{
+    color: var(--primary);
+    }
+
+    .hero .right3 p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    }
+
+    .content3 {
+      float:left; 
+      width: 100%;
+      margin-left: 10px;
+      align-items: center;
+    }
+    .btn3{
+      padding: 0.6rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: 2px solid transparent;
+      outline: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: all .2s ease;
+      }
+      .btn3-secondary{
+      background: transparent;
+      color: var(--primary);
+      border-color: var(--primary);
+      }
+      .btn3-secondary:hover{
+      background: var(--primary);
+      color: var(--secondary);
+      }
+
+      .mySlides{
+        height: 600px;
+        align-items: center;
+        margin-left: 16%;
+      }
+
+      .Overview h1{
+        font-size: 80px;
+        text-align: center;
+      }
+
+      .Overview{
+        background-color: rgb(19, 19, 19);
+      }
+
+      .GraphicDesign h6{
+        margin-top: 10px;
+      }
+
+      .mySlides1{
+        height: 600px;
+        align-items: center;
+        margin-left: 16%;
+      }
+
+    .Contact{
+      align-items: center;
+      margin-left: 45%;
+    }
+
+    .blondie{
+      height: 400px;
+    }
