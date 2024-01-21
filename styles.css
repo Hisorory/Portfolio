@@ -40,7 +40,7 @@ nav{
   content: '';
   width: 0%;
   height: 2px;
-  background: #94a9ee;
+  background: #124dc1;
   display: block;
   margin: auto;
 }
@@ -72,8 +72,8 @@ body{
 }
 
 .Image{
-  margin-left: -2%;
-  margin-top: -19rem;
+  margin-left: 2%;
+  margin-top: -21rem;
   width: 30%;
   height: auto;
 }
@@ -197,7 +197,7 @@ body{
         }
         
         .card-grid .card h1{
-          color: black;
+        color: black;
         font-weight: 600;
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
@@ -225,10 +225,10 @@ body{
         }
         @import 'utilities.css';
         :root{
-        --primary: rgb(142, 181, 231);
+        --primary: #124dc1;
         --bgDark: rgb(177, 177, 177);
         --white: rgb(250, 250, 250);
-        --secondary: rgb(4, 0, 59)
+        --secondary:rgb(27, 27, 27);
         --bgLight: rgb(190, 181, 181);
         }
         .flex{
