@@ -259,7 +259,7 @@ body{
             .btn-primary{
             background-color: var(--primary);
             color: var(--secondary);
-            margin-top: -23rem;
+            margin-top: 10rem;
             }
             .btn-primary:hover{
             background: transparent;
@@ -486,14 +486,20 @@ footer{
     }
 
     .blondie{
-      height: 400px;
+      height: 500px;
+      display: flex;
+      margin-left: 25px;
+    }
+    .music{
+      width: 90%;
+      height: auto;
+      margin-left: 10px;
+      margin-top: 30px;
     }
 
-.music{
-  width: 100%;
-  height: auto;
+.java{
   margin-left: 10px;
-  margin-top: 80px;
+  height: 550px;
 }
 
 .Overview p{
