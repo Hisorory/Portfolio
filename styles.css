@@ -63,7 +63,7 @@ nav{
 body{
     background-color: rgb(27, 27, 27);
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 
 }
@@ -329,12 +329,24 @@ img {
 
 footer{
   height: max-content;
+  width: 100%;
+  box-sizing: border-box;
   background: rgb(19, 19, 19);
-  text-align: center;
   padding:4rem;
   font-size: smaller;
   display: flex;
+  position: absolute;
+  margin-top: auto;
 }
+
+footer p{
+  text-align: center;
+}
+
+.indexfooter{
+  margin-left: 43%;
+}
+
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
@@ -389,6 +401,8 @@ footer{
 .info{
   max-width: 800px;
 }
+
+
 
 .text-box{
   width: 90%;
@@ -559,3 +573,8 @@ footer p {
   margin-left: 45%;
   margin-top: 5%;
 }
+
+.grid_br {
+  color: white;
+}
+
